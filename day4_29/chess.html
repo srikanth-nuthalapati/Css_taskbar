@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board</title>
+    <style>
+        html{
+            --Black: black;
+        }
+        table{
+            border: solid;
+            position: relative;
+            left: 25%;
+            border-collapse: collapse;
+        }
+       td{
+        width: 57px;
+        height: 57px;
+        text-align: center;
+        font-size: 50px;
+       }
+       .first td:nth-child(odd){
+        background-color: var(--Black);
+        color:white;
+       }
+       .sec td:nth-child(even){
+        background-color: var(--Black);
+        color: white;
+       }
+       h1{
+        text-align: center;
+        color: rgb(47, 105, 105);
+        margin-right: 10%;
+       }
+       .m:hover{
+        cursor:grab;
+        text-shadow: 3px 3px 3px rgb(51, 255, 0);
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Chess Board</h1>
+    <table>
+        <tr class="first">
+            <td class="m">&#9814</td>
+            <td class="m">&#9816</td>
+            <td class="m">&#9815</td>
+            <td class="m">&#9813</td>
+            <td class="m">&#9812</td>
+            <td class="m">&#9815</td>
+            <td class="m">&#9816</td>
+            <td class="m">&#9814</td>
+        <tr class="sec">
+            <td class="m">&#9817</td>
+            <td class="m">&#9817</td>
+            <td class="m">&#9817</td>
+            <td class="m">&#9817</td>
+            <td class="m">&#9817</td>
+            <td class="m">&#9817</td>
+            <td class="m">&#9817</td>
+            <td class="m">&#9817</td>
+        </tr>
+
+        <tr class="first">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="sec">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="first">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="sec">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="first">
+            <td class="m">&#9817</td>
+            <td class="m">&#9817</td>
+            <td class="m">&#9817</td>
+            <td class="m">&#9817</td>
+            <td class="m">&#9817</td>
+            <td class="m">&#9817</td>
+            <td class="m">&#9817</td>
+            <td class="m">&#9817</td>
+        </tr>
+        <tr class="sec">
+            <td class="m">&#9814</td>
+            <td class="m">&#9816</td>
+            <td class="m">&#9815</td>
+            <td class="m">&#9812</td>
+            <td class="m">&#9813</td>
+            <td class="m">&#9815</td>
+            <td class="m">&#9816</td>
+            <td class="m">&#9814</td>
+        </tr>
+    </table>
+</body>
+</html>
