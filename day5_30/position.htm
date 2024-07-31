@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+    body{
+         margin: 0;
+    }
+    a:visited{
+        color: black;
+    }
+    a:link{
+        color: black;
+    }
+    .header h1:hover{
+        background-color: rgb(161, 148, 148);
+    }
+    .header nav:hover{
+        background-color: rgb(161, 148, 148);
+    }
+    .header{
+        display: inline-block;
+       width: 100%;
+       position: fixed;
+       top: 0;
+       z-index: 3;
+       background-color: white;
+       letter-spacing: 2px;
+    }
+    .header h1{
+        display: inline-block;
+        float: left;
+        margin: 10px 10px;
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    #arc{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 100;
+    }
+    .navv{
+        float: right;
+        display: inline-flex;
+        padding: 5px 20px;
+        margin-top: 10px;
+        font-size: large;
+    }
+
+    .main h1{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        letter-spacing: 5px;
+    }
+    .image{
+        max-width: 100%;
+        height: auto;
+    }
+    header #br{
+        background-color: rgb(65, 61, 61);
+        padding :10px;
+        color: white !important;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+   header #Arc{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    font-weight: lighter;
+   }
+    .pro{
+     padding: 20px;
+     margin: 40px 10px;
+     letter-spacing: 3px;
+     font-size: x-large;
+
+    }
+   .row-padding{
+    padding: 0px 8px;
+   }
+   .margin-bottom{
+    margin-bottom: 16px;
+    padding: 0px 8px;
+    max-width: 310px;
+    float: left;
+    box-sizing: inherit;
+   }
+   .container{
+    position: relative;
+    box-sizing: inherit;
+   }
+   .top-left{
+    color: white;
+    background-color: black;
+    padding: 8px 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+   }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#header">
+         <h1>BR <span id="arc">Architects</span></h1>
+        </a>
+        <div class="navv">
+        <nav class="navv">
+           <a href="#projects">Projects</a>
+        </nav>
+        <nav class="navv">About</nav>
+        <nav class="navv">Contact</nav>
+        </div>
+    </div>
+    <header class="main" id="header">
+        <img class="image" src="architect.jpg" alt="architect" width="1500" height="800">
+    <div class="main">
+        <h1><span id="br">BR</span> <span id="Arc">Architects</span></h1> 
+    </div>
+</header>
+
+
+
+<div class="pro"  id="projects">
+    projects
+</div>
+<div class="row-padding">
+    <div class="margin-bottom">
+        <div class="container">
+          <div class="top-left">Summer House</div>
+          <img class="img" src="house5.jpg" alt="house" width="100%">
+        </div>
+    </div>
+    <div class="margin-bottom">
+        <div class="container">
+            <div class="top-left">Brick House</div>
+             <img class="img" src="house2.jpg" alt="house" width="100%">
+        </div>
+    </div>
+    <div class="margin-bottom">
+        <div class="container">
+            <div class="top-left">Renovated</div>
+            <img class="img" src="house3.jpg" alt="house" width="100%">
+        </div>
+    </div>
+    <div class="margin-bottom">
+        <div class="container">
+            <div class="top-left">Barn House</div>
+            <img class="img" src="house4.jpg" alt="house" width="100%">
+        </div>
+    </div>
+    <div class="margin-bottom">
+        <div class="container">
+            <div class="top-left">Summer House</div>
+            <img class="img" src="house2.jpg" alt="house" width="100%">
+        </div>
+    </div>
+    <div class="margin-bottom">
+        <div class="container">
+            <div class="top-left">Brick House</div>
+            <img class="img" src="house3.jpg" alt="house" width="100%">
+        </div>
+    </div>
+    <div class="margin-bottom">
+        <div class="container">
+            <div class="top-left"></div>
+            <img class="img" src="house4.jpg" alt="house" width="100%">
+        </div>
+
+    </div>
+    <div class="margin-bottom">
+        <div class="container">
+            <div class="top-left">Barn House</div>
+            <img class="img" src="house5.jpg" alt="house" width="100%">
+        </div>
+    </div>
+</div>
+</body>
+</html>
