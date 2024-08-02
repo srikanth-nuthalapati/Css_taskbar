@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+  <style>
+    .container{
+        width: 350px;
+        height:500px;
+        background-color: rgba(150, 65, 34, 0.527);
+        margin-left: 30%;
+    }
+    .header{
+        width: 100%;
+        height: 60px;
+        background-color: rgb(31, 31, 41);
+    }
+    .header img{
+        height: 45px;
+        width: 40px;
+        border-radius: 50%;
+        padding-top: 7px;
+    }
+    .header svg{
+        padding: 0px 5px;
+    }
+    .header .name{
+        color: whitesmoke;
+        display: inline-block;
+        font-size: 25px;
+        font-weight: bold;
+        position: relative;
+        left: 10px;
+        bottom: 10px;
+    }
+    .header .icons{
+        display: inline-block;
+        float: inline-end;
+        padding-top: 10px;
+    }
+    .footer{
+        width: 100%;
+        height: 60px;
+        background-color: rgb(31, 31, 41);
+        position: relative;
+        bottom: 0px;
+    }
+    .footer .emoji{
+        padding: 10px 3px;
+    }
+    .footer input{
+        height: 50%;
+        width: 35%;
+        background-color: rgb(31, 31, 41);
+        position: relative;
+        bottom: 25px;
+        border-radius: 30px;
+        border-color: rgb(31, 31, 41);
+        color: white;
+    }
+    .main{
+        height: 440px;
+        width: 100%;
+        overflow-y: scroll;
+        position: relative;
+    }
+    .article{
+        width:100%;
+        height:100%;
+        margin-top:5px;
+    }
+    .article span{
+        padding: 0px;
+        margin-bottom:  25px;
+        display: inline-block;
+        padding: 5px;
+    }
+    .article .left{
+        background-color: aliceblue;
+        border-radius: 5pc;
+    }
+    .article .right{
+        position: absolute;
+        right: 0;
+        background-color: aliceblue;
+        border-radius: 5pc;
+    }
+    .article .date{
+        color: aquamarine;
+        text-align: center;
+        position: sticky;
+        top: 0px;
+    }
+    .left:last-child{
+        display: inline-block;
+        font-size: 120px;
+    }
+    .container svg:hover{
+        cursor: pointer;
+        background-color: rgb(131, 151, 151);
+        border-radius: 30px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="28px" fill="#e8eaed"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+            <img src="joker-new-h8.jpg" alt="">
+            <div class="name">Bro</div>
+            <div class="icons">
+                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h480q33 0 56.5 23.5T720-720v180l160-160v440L720-420v180q0 33-23.5 56.5T640-160H160Zm0-80h480v-480H160v480Zm0 0v-480 480Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"/></svg>
+            </div>
+        </header>
+        <div class="main">
+        <main class="article">
+            <div>
+                <div class="date">29-7</div>
+            <span class="left">hi bro</span><br>
+            <span class="right">hello bro</span><br>
+            <span class="left">how are you</span><br>
+            <span class="right">i'm fine</span><br>
+            <span class="left">okay</span><br>
+           </div>
+           <div>
+             <div class="date">30-7</div>
+            <span class="right">what about you</span><br>
+            <span class="left">i'm good</span><br>
+            <span class="right">what are you doing</span><br>
+            <span class="left">learning frontend</span><br>
+            <span class="left">what about you</span><br>
+            <span class="right">thininkg of a business</span><br>
+            <span class="left">that's awesome</span><br>
+        </div>
+        <div>
+            <div class="date">31-7</div>
+            <span class="left">tell me about your idea</span><br>
+            <span class="right">let's meet</span><br>
+            <span class="left">When and where</span><br>
+            <span class="right">coffe shop</span><br>
+            <span class="left">when</span><br>
+            <span class="right">sunday</span><br>
+            <span class="left">10 o'clock</span><br>
+            <span class="right">ok</span><br>
+            <span class="left">👌</span>
+        </div>
+        </main>
+        </div>
+        <div class="footer">
+            <svg class="emoji" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M480-480Zm0 400q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q43 0 83 8.5t77 24.5v90q-35-20-75.5-31.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-32-6.5-62T776-600h86q9 29 13.5 58.5T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm320-600v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80ZM620-520q25 0 42.5-17.5T680-580q0-25-17.5-42.5T620-640q-25 0-42.5 17.5T560-580q0 25 17.5 42.5T620-520Zm-280 0q25 0 42.5-17.5T400-580q0-25-17.5-42.5T340-640q-25 0-42.5 17.5T280-580q0 25 17.5 42.5T340-520Zm140 260q68 0 123.5-38.5T684-400H276q25 63 80.5 101.5T480-260Z"/></svg>
+            <input type="text" placeholder="Message" autofocus>
+            <svg class="emoji" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M330-240q-104 0-177-73T80-490q0-104 73-177t177-73h370q75 0 127.5 52.5T880-560q0 75-52.5 127.5T700-380H350q-46 0-78-32t-32-78q0-46 32-78t78-32h370v80H350q-13 0-21.5 8.5T320-490q0 13 8.5 21.5T350-460h350q42-1 71-29.5t29-70.5q0-42-29-71t-71-29H330q-71-1-120.5 49T160-490q0 70 49.5 119T330-320h390v80H330Z"/></svg>
+            <svg class="emoji" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M531-260h96v-3L462-438l1-3h10q54 0 89.5-33t43.5-77h40v-47h-41q-3-15-10.5-28.5T576-653h70v-47H314v57h156q26 0 42.5 13t22.5 32H314v47h222q-6 20-23 34.5T467-502H367v64l164 178ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+            <svg class="emoji" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg>
+            <svg class="emoji" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M480-400q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm0-240Zm-40 520v-123q-104-14-172-93t-68-184h80q0 83 58.5 141.5T480-320q83 0 141.5-58.5T680-520h80q0 105-68 184t-172 93v123h-80Zm40-360q17 0 28.5-11.5T520-520v-240q0-17-11.5-28.5T480-800q-17 0-28.5 11.5T440-760v240q0 17 11.5 28.5T480-480Z"/></svg>
+        </div>
+    </div>
+</body>
+</html>
