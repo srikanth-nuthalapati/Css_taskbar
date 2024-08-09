@@ -22,6 +22,9 @@ body{
 .header-content .left-header, .right-header, a{
     padding: 8px 16px;
 }
+.button{
+    display: none;
+}
 a{
     text-decoration: none;
     color: black;
@@ -56,7 +59,7 @@ a:hover{
 .about .about-1{
     /* image part */
     padding: 30px;
-    width: 100%;
+    /* width: 100%; */
     opacity:0.7;
 }
 .about .about-2{
@@ -156,6 +159,56 @@ button:hover{
 .bottom div{
     padding-top: 40px;
     text-align: center;
+}
+
+@media screen and (width<550px) {
+    .hamburger{
+        background-size: 500px 100%;
+        background-position: initial;
+        margin-left: 10px;
+    }
+    .header .right-header{
+        display: none;
+    }
+    .header .button{
+        display: block;
+    }
+    .about{
+       padding:0;
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .about .about-1{
+        padding: 10px;
+        width: 100%;
+    }
+    .about-1 img{
+        width: 100% !important;
+        height: 100vh;
+    }
+    .menu{
+        display: block;
+        padding: 0;
+    }
+    .menu .menu-left{
+        padding: 10px 0 10px 30px;
+        width: 100%;
+    }
+    .menu .menu-right{
+        padding: 0 0 0 10px;
+        width: 100%;
+    }
+    .menu-right img{
+        width: 100%;
+    }
+    .footer{
+        padding: 0 0 0 10px;
+        width: 100%;
+    }
+    .footer p{
+        width: 100%;
+    }
 }
 
 

@@ -28,6 +28,7 @@
        z-index: 3;
        background-color: white;
        letter-spacing: 2px;
+      box-shadow: 5px 0 10px;
     }
     .header h1{
         display: inline-block;
@@ -47,7 +48,9 @@
         margin-top: 10px;
         font-size: large;
     }
-
+    .main{
+        position: relative;
+    }
     .main h1{
         position: absolute;
         top: 60%;
@@ -55,8 +58,8 @@
         transform: translate(-50%,-50%);
         letter-spacing: 5px;
     }
-    .image{
-        max-width: 100%;
+    .image{        
+        width: 100%;
         height: auto;
     }
     header #br{
@@ -83,9 +86,9 @@
    .margin-bottom{
     margin-bottom: 16px;
     padding: 0px 8px;
-    max-width: 310px;
+    width: 310px;
     float: left;
-    box-sizing: inherit;
+    box-sizing: border-box;
    }
    .container{
     position: relative;
@@ -103,6 +106,14 @@
     text-decoration: none;
    }
 
+   @media screen and (max-width:550px) {
+    .margin-bottom{
+        width: 100%;
+    }
+    .header .navv{
+        display: none;
+    }
+   }
     </style>
 </head>
 <body>
@@ -120,7 +131,7 @@
     </div>
     <header class="main" id="header">
         <img class="image" src="architect.jpg" alt="architect" width="1500" height="800">
-    <div class="main">
+    <div class="br">
         <h1><span id="br">BR</span> <span id="Arc">Architects</span></h1> 
     </div>
 </header>

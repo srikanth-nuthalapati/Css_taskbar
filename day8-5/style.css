@@ -46,3 +46,14 @@ a{
     text-decoration: none;
     color: blue;
 }
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0;
+        row-gap: 15px;
+        justify-content: stretch;
+    }
+    .container-1 {
+        width: 100%;
+        height: auto;
+    }
+  }
