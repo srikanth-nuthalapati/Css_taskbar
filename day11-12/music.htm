@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            box-sizing: border-box;
+            background: linear-gradient(rgba(39, 196, 8, 0.6),rgba(240, 228, 228, 0.5),rgba(2, 40, 255, 0.9),rgb(172, 19, 19));
+        }
+        .container{
+            width: 300px;
+            padding: 20px;
+            margin: 20px;
+            transform: translateX(50%);
+            box-shadow: 0px 0px 100px;
+            border-radius: 30px;
+        }
+        .image{
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            margin: 20px 0 80px 60px;
+            box-shadow: 0 0 10px 2px;
+        }
+        .image img{
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            animation-name: rotate;
+            animation: rotate 1s linear infinite forwards;
+        }
+        .ul{
+            height: 150px;
+            padding: 10px;
+            display: flex;
+            align-items:last baseline;
+            justify-content: center;
+        }
+        .ul li{
+            list-style-type: none;
+            height: 100px;
+            width: 20px;
+            background: linear-gradient(rgba(71, 55, 55, 0.5),rgb(13, 190, 146));
+            animation-name: one;
+            animation: one 1s linear  infinite alternate;
+            transform-origin: bottom;
+            box-shadow: 0 0 5px 1px rgb(93, 155, 52);
+        }
+        li:nth-child(even){
+            animation-name: one;
+            animation: one 2s linear  infinite alternate;
+        }
+        @keyframes rotate{
+            0% { 
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes one {
+            0% {
+                transform: scaleY(0);
+            }
+            50% {
+                transform: scaleY(1);
+            }
+            100% {
+                transform: scaleY(0.4);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="orange.webp" alt="orange">
+        </div>
+        <ul class="ul">
+            <li class="li"></li>
+            <li class="li"></li>
+            <li class="li"></li>
+            <li class="li"></li>
+            <li class="li"></li>
+            <li class="li"></li>
+            <li class="li"></li>
+            <li class="li"></li>
+            <li class="li"></li>
+        </ul>
+        <div class="music">
+            <audio src="[iSongs.info] 01 - Ola Olaala Ala.mp3" controls muted></audio>
+        </div>
+    </div>
+</body>
+</html>

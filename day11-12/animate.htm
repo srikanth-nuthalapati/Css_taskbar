@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 300px;
+            transform: translate(130%,60%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 10px;
+            border-radius: 10%;
+            box-shadow: 0 0 10px;
+            background: linear-gradient(rgba(70, 223, 40, 0.4),rgba(228, 225, 38, 0.5));
+        }
+        .ball{
+            width: 80px;
+            height: 120px;
+            display: flex;
+        }
+        .ball .one{
+            width: 30px;
+            height: 30px;
+            margin: 1px;
+            background-color: rgb(243, 197, 112);
+            border-radius: 50%;
+            animation-name: first;
+            animation: first 1s infinite both alternate-reverse;
+        }
+        .ball .two{
+            width: 30px;
+            height: 30px;
+            margin: 1px;
+            background-color: rgb(243, 197, 112);
+            border-radius: 50%;
+            animation-name: first;
+            animation: first 1s 1s infinite both alternate-reverse;
+        }
+        .ball .three{
+            width: 30px;
+            height: 30px;
+            margin: 1px;
+            background-color: rgb(243, 197, 112);
+            border-radius: 50%;
+            animation-name: first;
+            animation: first 1s 1.5s infinite both alternate-reverse;
+        }
+        .small{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+        .point{
+            height: 10px;
+            width: 10px;
+            background-color: aqua;
+            border-radius: 50%;
+            margin: 3px;
+        }
+        .first{
+            animation-name: start;
+            animation: start 0.5s  infinite alternate-reverse;
+        }
+        .second{
+            animation-name: start;
+            animation: start 0.5s 0.5s infinite alternate-reverse;
+        }
+        .third{
+            animation-name: start;
+            animation: start 0.5s 0.7s infinite alternate-reverse;
+        }
+        @keyframes start {
+            0% {
+                transform: scale(1.2);
+            }
+        }
+        @keyframes first {
+            0% {
+                transform: translateY(80px);
+                transition-timing-function:linear;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+        <div class="small">
+            <div class="point first"></div>
+            <div class="point second"></div>
+            <div class="point third"></div>
+        </div>
+    </div>
+</body>
+</html>
